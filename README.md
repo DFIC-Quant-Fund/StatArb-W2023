@@ -13,7 +13,7 @@ To run:
 
 1. Clone repo and initialize a virtual environment
 
-2. Run
+2. Run:
 
 ``` {.sourceCode .bash}
 $ pip install -r requirements.txt
