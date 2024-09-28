@@ -6,14 +6,14 @@ from AlgorithmImports import *
 class wrapper(QCAlgorithm):
 
     def Initialize(self):
-        self.SetStartDate(2022, 1, 1)
-        self.SetEndDate(2023, 1, 1)
+        self.SetStartDate(2023, 12, 10)
+        self.SetEndDate(2024, 9, 10)
         self.SetCash(100000)
 
-     # Create instances of the SymbolData class for different stock pairs
+        # Create instances of the SymbolData class for different stock pairs
         self.model = [
-            meanReversion(self, "AAPL", "MSFT"),
-            meanReversion(self, "AAL", "IBM"),
+            meanReversion(self, "DIS", "MRK"),
+            meanReversion(self, "AMZN", "MPC"),
         ]
 
     def OnData(self, data):
